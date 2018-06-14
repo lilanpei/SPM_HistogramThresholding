@@ -5,6 +5,7 @@ ifndef FF_ROOT
 FF_ROOT		= $(HOME)/fastflow
 endif
 
+#CXX		= icc -std=c++11
 CXX		= g++ -std=c++11
 INCLUDES	= -I $(FF_ROOT) 
 
@@ -15,7 +16,10 @@ TARGETS		= 	Sequential \
 			Threads \
 			Farm \
                         Pipeline \
-                        Farm_Pipeline
+                        Farm_Pipeline \
+                        Sequential_parellelFor \
+                        Pipeline_parellelFor \
+                        Farm_Pipeline_ParellelFor
 
 
 .PHONY: all clean cleanall
